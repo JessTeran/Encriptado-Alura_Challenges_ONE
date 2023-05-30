@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Dino</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/Logo@2x.png" alt="logo">
+        <h1>
+            Encriptador Dino
+            <img src="img\dino.png" alt="dino" class="imgDino">
+        </h1>
+    </header>
+    <section class="content">
+        <div class="form">
+            <form action="">
+                <div class="inputText">
+                    <textarea name="inputText1" id="inputText1" cols="30" rows="10" autofocus placeholder="Ingrese el texto aquí..."></textarea>
+                    <div>
+                        <img src="img\precaucion.png" alt="Importante" class="imgSigno">
+                        Solo letras minúsculas y sin acentos
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="buttonEncriptado" onclick="processText(event, 'encrypt')"> Encriptar </button>
+                    <button class="buttonDesencriptado" onclick="processText(event, 'decrypt')">Desencriptar</button>
+                </div>
+            </form>
+        </div>
+        <div class="contentText">
+            <div>
+                <div id="messageNotFound">
+                    <img src="img/resolucion-de-problemas.png">
+                    <p>Ningún mensaje fue encontrado</p>
+                </div>
+                <p id="outputText" class="outputText"></p>
+                <button class="buttonCopiar" id="buttonCopiar" onclick="copyToClipboard()">Copiar</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© Jessica Terán Chávez desde 2023</p>
+        <a href="https://github.com/JessTeran" target="_blank">
+            <img src="img\github.png" alt="Link a GitHub">
+        </a>
+    </footer>
+
+    <script src="src/script.js"></script>
+
+</body>
+</html>

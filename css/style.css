@@ -1,0 +1,411 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body {
+    min-height: 98vh;
+    background-color: rgba(45, 2, 69, 0.221);
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+
+.header > img {
+    width: 100px;
+    height: 50px;
+}
+
+.header > h1 {
+    text-align: center;
+    color: rgba(46, 2, 69, 0.6);
+    text-shadow: 2px 2px rgba(46, 2, 69, 0.2);
+    margin-top: 0;
+}
+
+.imgDino {
+    width: 80px;
+    height: 60px;
+}
+
+/*Body*/
+
+.content {
+    display: flex;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 1;
+}
+
+
+/* --- Formulario --- */
+.form {
+    width: 60%;
+    height: 350px;
+}
+
+.inputText > textarea {
+    width: 90%;
+    height: 290px;
+    padding: 5%;
+    background-color: rgba(46, 2, 69, 0.005);
+    border: none;
+    font-size: x-large;
+    color: rgba(46, 2, 69, 0.6);
+   
+}
+
+.inputText > textarea:focus {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(46, 2, 69, 0.6);
+    outline: rgba(46, 2, 69, 0.6);
+}
+
+.inputText > div {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: rgba(46, 2, 69, 0.5);
+}
+
+.imgSigno {
+    width: 30px;
+    height: 30px;
+}
+
+.buttons {
+    width: 95%;
+    text-align: center;
+}
+
+.buttonEncriptado, .buttonDesencriptado {
+  display: inline-block;
+  width: 170px;
+  height: 45px;
+  padding: 8px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgba(0, 255, 255, 0.4);
+  background-color: #173c74;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+  margin-right: 10px;
+}
+  
+.buttonEncriptado:hover {
+    background-color: #0a2142;
+}
+
+.buttonEncriptado:active {
+  background-color: #0a2142;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buttonDesencriptado {
+    background-color: rgba(46, 2, 69, 0.5);
+}
+
+.buttonDesencriptado:hover {
+    background-color: rgba(46, 2, 69, 0.8);
+}
+
+.buttonDesencriptado:active {
+  background-color: rgba(46, 2, 69, 0.8);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* --- formulario Respuesta --- */
+.contentText {
+    position: relative;
+    width: 40%;
+    height: 480px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #173c74;
+    margin-left: 2%;
+    box-shadow: 10px 10px 10px  rgb(46, 2, 69, 0.4);
+    background-color: rgb(46, 2, 69, 0.1);
+    
+}
+
+.contentText > div {
+    margin: 5%;
+    text-align: center;
+}
+
+.contentText > div > div > img {
+    width: 55%;
+    padding: 10px;
+}
+
+.contentText > div > div > p {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(46, 2, 69, 0.4);
+    padding: 10px;
+}
+
+.outputText {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(46, 2, 69, 0.4);
+    padding: 10px;
+}
+.buttonCopiar {
+    position: absolute;
+    bottom: 20px;
+    left: 38%;
+    width: 100px;
+    height: 35px;
+    padding: 4px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgba(0, 255, 255, 0.4);
+    background-color: rgb(46, 2, 69, 0.4);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(46, 2, 69, 0.7);
+    box-shadow: 0 9px #999;
+    display: none;
+}
+
+.buttonCopiar:hover {
+    background-color: rgba(46, 2, 69, 0.8);
+    border-color: #0a2142;
+}
+
+.buttonCopiar:active {
+  background-color: rgba(46, 2, 69, 0.8);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*Footer*/
+
+footer { 
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    background-color: #173c7437;
+    font-size: small;
+    color: rgba(46, 2, 69, 0.3);
+    margin-top: auto;
+}
+
+footer > a > img {
+    width: 50px;
+    height: 50px;
+}
+
+/*Responsive Tablet*/
+@media only screen and (max-width: 788px){
+
+    /*Body*/
+
+    .content {
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* --- Formulario --- */
+    .form {
+        width: 100%;
+        height: 680px;
+    }
+
+    .inputText > textarea {
+        width: 80%;
+        height: 350px;
+        padding: 10%; 
+    } 
+    
+    .inputText > div {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .buttons {
+        width: 100%;
+     
+    }
+    
+    .buttonEncriptado, .buttonDesencriptado {
+      margin: 18px;
+    }
+    
+    /* --- formulario Respuesta --- */
+    .contentText {
+        width: 95%;
+        height: 180px;
+        padding: 2%; 
+        margin-left: 0;
+    }
+    
+    .contentText > div {
+        margin: auto;
+    }
+    
+    .contentText > div > div > img {
+        width: 15%;
+    }
+    
+    .contentText > div > div > p {
+        padding: 0p;
+        margin: 0;
+    }
+
+    .outputText {
+        padding: 0;
+    }
+
+    /*Footer*/
+
+    footer { 
+        height: 100px;
+        margin-top: 50px;
+    }
+}
+
+/*Responsive Celular*/
+@media only screen and (max-width: 414px) {
+
+    /*Header*/
+
+    .header > img {
+        width: 70px;
+        height: 20px;
+    }
+
+    .header > h1 {
+        text-shadow: 2px 1px rgba(46, 2, 69, 0.2);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .imgDino {
+        width: 45px;
+        height: 30px;
+    }
+
+    /*Body*/
+
+    .content {
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* --- Formulario --- */
+    .form {
+        width: 100%;
+        height: 360px;
+    }
+
+    .inputText > textarea {
+        width: 80%;
+        height: 150px;
+        padding: 10%;
+        font-size: 12px;
+    }
+
+    .inputText > div {
+        font-size: small;
+        margin-top: 6px;
+        margin-bottom: 10px;
+    }
+
+    .imgSigno {
+        width: 20px;
+        height: 20px;
+    }
+
+    .buttons {
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttonEncriptado, .buttonDesencriptado {
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    box-shadow: 0 6px #999;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    }
+
+    /* --- formulario Respuesta --- */
+    .contentText {
+        width: 95%;
+        height: 130px;
+        box-shadow: 8px 8px 8px  rgb(46, 2, 69, 0.4);
+        padding: 0;
+    }
+
+    .contentText > div {
+        margin: 0;
+    }
+
+    .contentText > div > div > img {
+        display: none;
+    }
+
+    .contentText > div > div > p {
+        font-size: medium;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+        margin-top: 35px;
+    }
+
+    .outputText {
+        font-size: 12px;
+        font-weight: bold;
+        padding: 0px;
+    }
+
+    .buttonCopiar {
+        position: absolute;
+        bottom: 12px;
+        left: 38%;
+        width: 70px;
+        height: 25px;
+        padding: 2px 5px;
+        font-size: 12px;
+        display: none;
+    }
+
+    /*Footer*/
+
+    footer { 
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    footer > p {
+        margin-bottom: 0;
+    }
+
+    footer > a > img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
